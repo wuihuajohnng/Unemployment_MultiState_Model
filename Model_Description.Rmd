@@ -1,0 +1,65 @@
+---
+title: "Model Description_1"
+author: "John Ng"
+date: "25/08/2020"
+output: html_document
+---
+
+<h1>Model Description</h1>
+
+<br>
+  
+<h3>1. High level overview</h3>
+
+<br>
+
+A multi-state model (or compartmental model) has been constructed with three states: <em>Employed</em>, <em>Furloughed</em> and <em>Unemployed</em>.  The model has two phases 1. <em>Furlough</em> (state prior to start of unwinding of scheme) and 2. <em>Post-Furlough</em> (including transition out of furlough as scheme unwinds).
+
+<br>
+
+<h3>2. Furlough </h3>
+
+<br>
+
+This is based on the situation prior to when the furlough scheme will start unwinding, where employment status can either go from employed to furlough or unemployed states. Alternatively, a life can remain in employed.
+
+<br>
+
+The transitions in the Furlough phase are:<br>
+1.	transfer from <em>Employed</em> to <em>Furloughed</em>.<br>
+2.	transfer from <em>Employed</em> to <em>Unemployed</em> states<br>
+3.	the opposite of the sum of the transition nets out, equals the force to remain employed. This therefore exhausts all transition possibilities.<br>
+
+In this phase the following transitions are considered small, so to simplify the model it is assumed there is no transfer: <em>Furloughed</em> to <em>Unemployed</em>, <em>Furloughed</em> to <em>Employed</em> and <em>Unemployed</em> to <em>Employed</em>.<br>
+
+It is assumed to be an unlikely climate for mass hiring of new staff, although some businesses like super-markets and deliveries has seen an increase in demand but it is not widespread in the economy. There is assumed to be limited rationale for employers to transfer staff to unemployed given the high level of salary covered by the furlough scheme.<br>
+
+Each pair of transitions includes two parameters:
+-	a ratio parameter that can be used to vary the steady-state relative sizes of the states without altering the rate at which that steady-state is approached
+-	a dampening parameter, which can be used to vary the rate at which that steady-state is reached without affecting the relative sizes of the states at steady-state.<br>
+
+For example, the working group assumed the ratio of <em>Furloughed</em> to <em>Employed</em> will converge to 0.39 on the 1st August 2020; close to the ratio on the 1st May (starting point of the scenario).<br>
+
+(These parameters are described in more detail in the Appendix of Documentation).<br>
+
+The working group calibrated the ratio parameters such that a steady state number of employees in Furlough was maintained until the furlough scheme begins to unwind, which was assumed to be the 1st August 2020.  Available data neither suggests an increasing nor decreasing trend for any of the states which further simplifies the model (source: ONS).
+
+<br>
+
+<h3>3. Post-Furlough </h3>
+
+<br>
+
+This represents the position Post-Furlough, including the transition out of furlough as the scheme starts to unwind.  In order to keep the model simple, we have assumed the scheme will start this transition from <em>Furloughed</em> to <em>Employed</em> or <em>Unemployed</em> states from 1st August 2020.
+
+<br>
+
+Considering the transitions that are the reciprocal transfers from <em>Employed</em> to <em>Unemployed</em> states.  This ratio parameter is the steady state between these states i.e. recovery where unemployment returns back to the 4.1% level pre-recession and the associated dampening parameters is the time taken to reach this state.  For example, depending on the scenario, a slow return to pre-recession level will result in a high dampening parameter e.g. 500 days for the BoE (Aug) forecast and 1000 days for the OBR central forecast.<br>
+
+The transition from <em>Furloughed</em> to either <em>Employed</em> or <em>Unemployed</em> states is calibrated to determine the proportion of those furloughed workers that immediately re-join the workforce and the associated dampening parameter is the time taken to reach this state where the <em>Furloughed</em> state is approaching 0 (end of scheme or no furlough support).  For example, the period 1st August to 31st October 2020 is 91 days but the modelled forecast could use an assumption higher than 91 days to convey some level of further government support beyond this transition to employment. <br>
+
+For the Post-Furlough phase, the working group used various sources (section 2.3) to calibrate the parameters including the OBR, BoE and other forecasters.  However, the model has functionality to create custom scenarios to encourage discussions and explore the possible effects on unemployment based on your own alternative scenarios.
+
+
+
+

@@ -1,0 +1,38 @@
+---
+title: "About"
+author: "John Ng"
+date: "25/08/2020"
+output: html_document
+---
+
+<h1>About</h1>
+
+<br>
+
+The R scripts for this Shiny app are available on [Github](https://github.com/wuihuajohnng/Unemployment_MultiState_Model).
+
+This app was developed by [John Ng](https://www.linkedin.com/in/wui-hua-ng/) who you could get in touch with questions.
+
+<br>
+
+The Unemployment Multi-State model and documentation were contributed by:
+
+[Scott Reid](https://www.linkedin.com/in/scott-reid-950a3410)
+
+[Dr Chris Martin](https://www.linkedin.com/in/chris-martin-2b874623)
+
+[Josephine Robertson](https://www.linkedin.com/in/josephinerobertson)
+
+<br>
+
+Other IFoA COVID-19 Action Taskforce (ICAT) workstream members involved:
+
+[Nicola Oliver](https://www.linkedin.com/in/nicola-oliver)
+
+[David Beddows](https://www.linkedin.com/in/david-beddows-02174a9b)
+
+[Raunak Jha](https://www.linkedin.com/in/raunak-jha-fia-fiai-65860389)
+
+[Kenneth McIvor](https://www.linkedin.com/in/krmactuary)
+
+[Sumit Misra](https://www.linkedin.com/in/sumit-misra-0aa2661b/)
