@@ -11,13 +11,15 @@ output: html_document
 
 The R scripts for this Shiny app are available on [Github](https://github.com/wuihuajohnng/Unemployment_MultiState_Model).
 
-This app was developed by [John Ng](https://www.linkedin.com/in/wui-hua-ng/) who you could get in touch with questions.
+This Shiny app was developed by [John Ng](https://www.linkedin.com/in/wui-hua-ng/) and [Dr Chris Martin](https://www.linkedin.com/in/chris-martin-2b874623) who you could get in touch with questions.
 
 <br>
 
 The Unemployment Multi-State model and documentation were contributed by:
 
 [Scott Reid](https://www.linkedin.com/in/scott-reid-950a3410)
+
+[John Ng](https://www.linkedin.com/in/wui-hua-ng/)
 
 [Dr Chris Martin](https://www.linkedin.com/in/chris-martin-2b874623)
 
